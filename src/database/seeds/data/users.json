@@ -1,0 +1,53 @@
+[
+  {
+    "email": "admin@gmail.com",
+    "password": "Senha123",
+    "profile": {
+      "userId": 1,
+      "userName": "Bruno Regis",
+      "userType": "admin",
+      "addresses": []
+    }
+  },
+  {
+    "email": "lucianaSenna@gmail.com",
+    "password": "Senha123",
+    "profile": {
+      "userName": "Luciana Senna",
+      "userType": "client",
+
+      "addresses": [
+        {
+          "street": "Rua X",
+          "city": "Belém",
+          "state": "Pará",
+          "zipCode": "66634000",
+          "country": "Brasil",
+          "complement": "Perto da praça",
+          "latitude": 1.123,
+          "longitude": -43.4564
+        }
+      ]
+    }
+  },
+  {
+    "email": "alonso@gmail.com",
+    "password": "Senha123",
+    "profile": {
+      "userName": "Alonso Viera",
+      "userType": "deliveryman",
+      "addresses": [
+        {
+          "street": "Rua Y",
+          "city": "Belém",
+          "state": "Pará",
+          "zipCode": "66454000",
+          "country": "Brasil",
+          "complement": "Atras do Lider",
+          "latitude": 1.323123,
+          "longitude": -44.40000015
+        }
+      ]
+    }
+  }
+]

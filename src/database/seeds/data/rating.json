@@ -1,0 +1,32 @@
+[
+  {
+    "productId": 1,
+    "message": "Veio não muito quente",
+    "star": 4,
+    "clientId": 1
+  },
+  {
+    "productId": 2,
+    "message": "Muito gostoso, no ponto",
+    "star": 5,
+    "clientId": 1
+  },
+  {
+    "productId": 3,
+    "message": "Melhor que ja tomei",
+    "star": 5,
+    "clientId": 1
+  },
+  {
+    "productId": 4,
+    "message": "Achei estranho o sabor mas é bom",
+    "star": 3,
+    "clientId": 1
+  },
+  {
+    "productId": 5,
+    "message": "Excelente mas podia ter mais canela",
+    "star": 4,
+    "clientId": 1
+  }
+]

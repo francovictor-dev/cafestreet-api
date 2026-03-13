@@ -1,0 +1,37 @@
+[
+  {
+    "id": 1,
+    "name": "Café Express",
+    "amount": 20.99,
+    "description": " Originário da Itália, é caracterizado por sabores intensos, corpo aveludado e aroma marcante, servindo de base para cappuccinos e lattes.",
+    "photoUrl": "https://cdn.pixabay.com/photo/2019/12/02/11/23/drink-4667507_1280.jpg"
+  },
+  {
+    "id": 2,
+    "name": "Café com leite",
+    "amount": 16.99,
+    "description": "O café com leite é uma bebida clássica, composta pela mistura de café (geralmente coado forte ou expresso) e leite quente",
+    "photoUrl": "https://cdn.pixabay.com/photo/2020/01/18/13/13/latte-4775245_1280.jpg"
+  },
+  {
+    "id": 3,
+    "name": "Café com creme",
+    "amount": 22.99,
+    "description": "Café com creme é uma bebida cremosa preparada misturando café quente com creme de leite, ou através de uma mistura batida de café solúvel, açúcar e água, resultando em uma textura consistente, similar a de cafeteria.",
+    "photoUrl": "https://cdn.pixabay.com/photo/2016/11/29/09/47/caramel-1868802_1280.jpg"
+  },
+  {
+    "id": 4,
+    "name": "Mocha",
+    "amount": 23.99,
+    "description": "É uma bebida cremosa, baseada no caffè latte (café com leite), que leva calda de chocolate, chocolate em pó ou ganache",
+    "photoUrl": "https://cdn.pixabay.com/photo/2020/03/07/05/17/coffee-4908762_1280.jpg"
+  },
+  {
+    "id": 5,
+    "name": "Café com canela",
+    "amount": 20.99,
+    "description": "O café com canela é uma combinação funcional que une o poder termogênico da cafeína ao controle glicêmico da canela, auxiliando no metabolismo e na queima de gordura",
+    "photoUrl": "https://cdn.pixabay.com/photo/2018/11/24/23/44/beans-3836572_1280.jpg"
+  }
+]
