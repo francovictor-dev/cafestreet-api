@@ -38,4 +38,30 @@ export class AuthService {
       accessToken: this.jwtService.sign(payload),
     };
   }
+
+  async loginClient(email: string, password: string) {
+    const user = await this.userRepository.findOne({
+      where: { email },
+      relations: ['profile'],
+    });
+
+    if (!user || user?.profile?.userType != UserType.CLIENT) {
+      throw new UnauthorizedException('Invalid credentials');
+    }
+
+    const passwordMatch = await argon2.verify(user.password, password);
+
+    if (!passwordMatch) {
+      throw new UnauthorizedException('Invalid credentials');
+    }
+
+    const payload = {
+      sub: user.id,
+      email: user.email,
+    };
+
+    return {
+      accessToken: this.jwtService.sign(payload),
+    };
+  }
 }

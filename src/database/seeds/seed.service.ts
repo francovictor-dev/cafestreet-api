@@ -1,4 +1,5 @@
 import { Injectable, Logger } from '@nestjs/common';
+import * as argon2 from 'argon2';
 import { DataSource, EntityManager } from 'typeorm';
 import { Address } from '../../address/entities/address.entity';
 import { Admin } from '../../admin/entities/admin.entity';
@@ -8,8 +9,8 @@ import { Order } from '../../order/entities/order.entity';
 import { OrderItem } from '../../order_item/entities/order_item.entity';
 import { Product } from '../../product/entities/product.entity';
 import { Profile, UserType } from '../../profile/entity/profile.entity';
-import { User } from '../../user/entities/user.entity';
 import { Rating } from '../../rating/entities/rating.entity';
+import { User } from '../../user/entities/user.entity';
 //@ts-ignore
 import * as users from './data/users.json';
 //@ts-ignore
@@ -25,6 +26,9 @@ export class SeedService {
 
   async userSeeds(manager: EntityManager) {
     for (const user of users) {
+      const passwordHash = await argon2.hash(user.password);
+
+      user.password = passwordHash;
       const userData = manager.create(User, {
         email: user.email,
         password: user.password,

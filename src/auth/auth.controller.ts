@@ -6,8 +6,13 @@ import { LoginDto } from './dto/login.dto';
 export class AuthController {
   constructor(private readonly authService: AuthService) {}
 
-  @Post('login')
+  @Post('login-admin')
   login(@Body() dto: LoginDto) {
     return this.authService.login(dto.email, dto.password);
+  }
+
+  @Post('login-client')
+  loginClient(@Body() dto: LoginDto) {
+    return this.authService.loginClient(dto.email, dto.password);
   }
 }
